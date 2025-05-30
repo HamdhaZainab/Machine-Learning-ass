@@ -1,0 +1,7 @@
+y_pred = model.predict(X_test)
+print("Accuracy Score:", accuracy_score(y_test, y_pred))
+print(classification_report(y_test, y_pred))
+conf_matrix = confusion_matrix(y_test, y_pred)
+sns.heatmap(conf_matrix, annot=True, fmt="d", cmap="Blues",
+            xticklabels=data.target_names, yticklabels=data.target_names)
+Figure: Confusion Matrix showing classification performance.

@@ -1,0 +1,4 @@
+iris.describe()
+sns.pairplot(iris, hue='target')
+plt.show()
+📷 Figure: Pairplot showing feature relationships for each species.
